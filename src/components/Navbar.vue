@@ -19,7 +19,23 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-chevron-double-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul
@@ -70,10 +86,18 @@ export default {
   position: absolute;
   top: 30px;
 }
+svg {
+  color: white;
+}
 
 .container-fluid {
   box-shadow: 0 0 8px rgba(255, 255, 255, 1);
   backdrop-filter: blur(5px);
+}
+@media screen and (max-width: 990px) {
+  .container-fluid {
+    box-shadow: 0 0 0;
+  }
 }
 
 .nav-link {
@@ -97,6 +121,9 @@ export default {
   margin-bottom: 15px;
   height: 50px;
   width: 55px;
+}
+.navbar-toggler {
+  color: white;
 }
 
 #navbrand {

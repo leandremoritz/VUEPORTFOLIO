@@ -15,7 +15,7 @@
             :for="'t-' + (i + 1)"
           >
             <img :src="t.img" alt="picture" />
-            <p>{{ t.quote }}</p>
+            <p>"{{ t.quote }}"</p>
             <h2>{{ t.name }}</h2>
           </label>
         </div>
@@ -108,24 +108,25 @@ export default {
   box-sizing: border-box;
   backdrop-filter: blur(20px);
   /* background-color: white; */
-  background-color: rgba(0, 0, 0, 0.909);
+  background-color: white;
   backdrop-filter: blur(5px);
   padding: 20px;
+  color: #000;
   width: 350px;
   text-align: center;
   transition: transform 0.4s;
   transform-style: preserve-3d;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+  box-shadow: 2px 3px 8px rgb(6, 7, 91);
   user-select: none;
   cursor: pointer;
 }
 .testimonials .item img {
   width: 100px;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+  box-shadow: 0 0 8px rgb(6, 7, 91);
 }
 .testimonials .item p {
-  color: white;
+  color: black;
   font-size: bolder;
 }
 
@@ -136,7 +137,7 @@ export default {
 
   /* opacity: 0.6; */
   font-weight: bolder;
-  background: linear-gradient(#000, #fff, #000, #fff, #000);
+  background: -webkit-linear-gradient(#000, #9f9d9d, #000, #9f9d9d, #000);
   /* background-image: linear-gradient(45deg, #000, #fff, #000, #fff, #000); */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -298,5 +299,11 @@ export default {
 }
 #t-5:checked ~ .testimonials label[for="t-5"] {
   z-index: 4;
+}
+@media screen and (max-width: 500px) {
+  .glass {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 </style>

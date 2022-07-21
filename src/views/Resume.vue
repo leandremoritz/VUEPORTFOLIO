@@ -35,6 +35,9 @@ export default {
 </script>
 
 <style scoped>
+.glass {
+  height: fit-content;
+}
 #Resume {
   height: 100vh;
   background-color: transparent;
@@ -178,5 +181,10 @@ h1 {
   line-height: 1.5;
   font-size: 1rem;
   margin: 0.5rem 0 0;
+}
+@media screen and (width: 1400px) {
+  .glass {
+    height: fit-content;
+  }
 }
 </style>

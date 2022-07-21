@@ -41,6 +41,8 @@ export default {
 .glass {
   margin: 2%;
   width: 90vw;
+  height: 35vw;
+  margin-top: 130px;
   box-shadow: 0 0 8px rgba(255, 255, 255, 1);
   backdrop-filter: blur(5px);
   background-position: center;
@@ -680,14 +682,6 @@ html {
   bottom: -50%;
   margin-left: -100%;
   animation-name: earth;
-}
-@keyframes earth {
-  0% {
-    transform: scale(1.5);
-  }
-  50% {
-    transform: scale(2.5);
-  }
 }
 
 #title {

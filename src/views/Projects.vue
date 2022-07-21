@@ -82,13 +82,6 @@ body {
   align-content: center;
   height: 100vh;
 }
-.glass {
-  margin-left: 4vw;
-  margin-top: 20vh;
-  padding-top: 0;
-  height: 70vh;
-  padding-bottom: 10vh;
-}
 
 * {
   list-style: none;
@@ -128,7 +121,7 @@ img {
 }
 /* color settings */
 .dark {
-  background-color: #000;
+  background-color: transparent;
 }
 .dark img {
   box-shadow: 1px 1px 5px rgb(58, 58, 58), -1px -1px 5px rgb(15, 15, 15);
@@ -258,6 +251,18 @@ img {
   }
   .card-bg {
     margin: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .glass {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+  .body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 </style>

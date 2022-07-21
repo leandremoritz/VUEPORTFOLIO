@@ -62,7 +62,7 @@ form textarea {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
   resize: none;
-  background-color: rgba(240, 229, 229, 0.909);
+  background-color: white;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
@@ -77,7 +77,7 @@ form #input-submit {
   color: white;
 
   cursor: pointer;
-  background-color: rgba(240, 229, 229, 0.909);
+  background-color: white;
   backdrop-filter: blur(5px);
 }
 form #input-submit:hover {
@@ -121,5 +121,10 @@ form textarea {
 
 .cf:after {
   clear: both;
+}
+@media screen and (max-width: 1300px) {
+  .glass {
+    height: fit-content;
+  }
 }
 </style>

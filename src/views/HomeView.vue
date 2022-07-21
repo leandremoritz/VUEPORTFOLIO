@@ -250,4 +250,10 @@ h2 {
 .world {
   height: 50vh;
 }
+@media screen and (max-width: 1100px) {
+  #title {
+    font-size: 60px;
+    animation-iteration-count: initial;
+  }
+}
 </style>

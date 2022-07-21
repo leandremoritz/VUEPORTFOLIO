@@ -74,7 +74,7 @@ export default {};
 h3 {
   /* margin-top: -350px; */
   font-weight: bold;
-  color: white !important;
+  color: black !important;
 }
 ul {
   list-style-type: none;
@@ -165,8 +165,8 @@ b {
   position: absolute;
   width: 85%;
   height: 85%;
-  background: rgba(0, 0, 0, 0.853);
-  color: white;
+  background: white;
+  color: black;
   z-index: 5;
   bottom: 0;
   right: 0;

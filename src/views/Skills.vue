@@ -79,6 +79,7 @@ ul {
 .glass {
   margin-top: 20vh;
   margin-left: 4vw;
+  height: fit-content;
 }
 
 body {
@@ -207,7 +208,6 @@ p[data-value] {
 }
 
 p[data-value]:after {
-  content: attr(data-value) "%";
   position: absolute;
   right: 0;
 }
@@ -300,5 +300,15 @@ p[data-value]:after {
     ),
     -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
     -moz-linear-gradient(left, grey, grey);
+}
+@media screen and (max-width: 550px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  progress[value] {
+    width: 40vh;
+  }
 }
 </style>
