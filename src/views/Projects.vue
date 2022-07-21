@@ -6,15 +6,45 @@
         v-for="project in projects"
         :key="project"
       >
-        <article>
+        <div class="container">
+          <div class="view view-tenth">
+            <img
+              data-bs-toggle="modal"
+              data-bs-target="#PROJECTS1"
+              class="img-responsive"
+              :src="project.image"
+            />
+            <div class="mask">
+              <h2>{{ project.title }}</h2>
+              <ul class="social-links">
+                <li>
+                  <a
+                    href="https://github.com/Carlaamylawrence/Company_portfolio"
+                    class="fa-brands text-none fa-github"
+                    style="color: black"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://sweetheavenconfectionery.netlify.app"
+                    class="fa-solid text-none fa-globe"
+                    style="color: black"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <article>
           <div class="description">
             <img :src="project.image" alt="" />
 
             <h2>{{ project.title }}</h2>
           </div>
-          <hr />
+          <hr /> -->
 
-          <section class="actions">
+        <!-- <section class="actions">
             <div class="circle">
               <li>
                 <a
@@ -33,8 +63,8 @@
                 ></a>
               </li>
             </div>
-          </section>
-        </article>
+          </section> -->
+        <!-- </article> -->
       </section>
     </div>
   </div>
@@ -70,199 +100,144 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  color: black;
-  font-weight: bold;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100vh;
-}
-
-* {
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+/* project */
+img {
+  width: 250px;
+  height: 250px;
 }
 .body {
-  margin: 0;
-  margin-top: 0;
-  margin-left: -41.5%;
+  display: flex;
+  color: white;
+}
+#Projects img {
+  width: 150px;
+  height: 150px;
+}
+.project-card {
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden;
+
+  margin-bottom: 15px;
+}
+.project-card .project-img {
+  overflow: hidden;
+}
+.project-card .project-img img {
+  width: 100%;
+  height: auto;
+  transition: all 1s ease;
+}
+.project-card:hover .project-img img {
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 990px) {
+  .projects-container {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-container {
+    margin-top: 350px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .projects-container {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .words {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .testimonials .item {
+    width: 350px;
+  }
+}
+
+.project-card .profile-content::before {
+  content: "";
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.project-card .profile-content::before {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 40%;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+
+.project-card:hover .profile-content::before {
+  top: 20px;
+  left: 20px;
+}
+
+.project-card .profile-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50% 4%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.project-card .profile-content:hover {
+  padding-bottom: 200px;
+  background-color: rgba(37, 245, 14, 0.8);
+}
+.project-card .profile-content .btn {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+.project-card .profile-content .btn > span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+.project-card:hover .profile-content .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card .profile-content .social-links {
+  list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  transform: scale(0.5);
-  align-items: center;
+  margin: 10px 0;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
 }
-section {
-  margin-top: 0;
+.project-card:hover .profile-content .social-links {
+  opacity: 1;
+  transform: translateY(0);
 }
-html {
-  scroll-behavior: smooth;
+.project-card .profile-content .social-links li {
+  display: inline-block;
+  margin: 0px 5px;
 }
-img {
-  width: 100%;
-  aspect-ratio: 1;
+.project-card .profile-content .social-links li a {
+  color: rgb(14, 13, 13);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  body {
-    display: grid;
-    row-gap: 20px;
-  }
-}
-.description {
-  /* transform: scale(0.3); */
-}
-/* color settings */
-.dark {
-  background-color: transparent;
-}
-.dark img {
-  box-shadow: 1px 1px 5px rgb(58, 58, 58), -1px -1px 5px rgb(15, 15, 15);
-}
-.dark .description {
-  background-color: white;
-}
-.dark .description h4 {
-  color: #eee;
-}
-.dark .description p {
-  color: rgb(141, 141, 141);
-}
-.dark .actions {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px rgb(58, 58, 58), -2px -2px 5px rgb(15, 15, 15);
-}
-.dark .actions .circle {
-  background-color: white;
-}
-.dark .actions .circle i {
-  color: #666;
-}
-
-.light {
-  background-image: linear-gradient(#eee 50%, #666);
-}
-.light img {
-  box-shadow: 2px 2px 5px rgb(255, 255, 255), -2px -2px 5px rgb(163, 163, 163);
-}
-.light .description {
-  background-color: #eee;
-}
-.light .description h4 {
-  color: #333;
-}
-.light .description p {
-  color: rgb(141, 141, 141);
-}
-.light .actions {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px rgb(255, 255, 255), -2px -2px 5px rgb(163, 163, 163);
-}
-.light .actions .circle {
-  background-color: #333;
-}
-.light .actions .circle i {
-  color: rgb(184, 184, 184);
-}
-/* color settings END */
-
-/* orientation settings */
-.vertical {
-  width: 80vh;
-  display: grid;
-}
-/* orientation settings END*/
-
-.card-bg {
-  padding: 5px;
-  border-radius: 25px;
-  margin: 20px;
-  box-shadow: 3px 2px 5px white;
-}
-.card-bg img {
-  transition: 0.2s;
-  width: 100%;
-  border-radius: 8px;
-}
-.card-bg img:hover {
-  transition: 0.2s;
-  opacity: 0.8;
-  transform: scale(1.02);
-}
-.card-bg .actions {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  border-radius: 25px;
-}
-.card-bg .actions .circle {
-  transition: 0.2s;
-  box-shadow: 2px 2px 5px grey;
-  padding: 8px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 10px 0 0;
-  cursor: pointer;
-}
-.card-bg .actions .circle:hover {
-  transition: 0.2s;
-  background-color: #666;
-}
-.card-bg .actions .circle:hover i {
-  transition: 0.2s;
-  color: #eee;
-}
-.card-bg .actions .circle i {
-  font-size: 16pt;
-  margin: auto;
-}
-.card-bg .description {
-  padding: 25px;
-  border-radius: 25px;
-  box-shadow: inset 1px 1px 1px rgb(143, 143, 143), inset -1px -1px 1px #666;
-}
-.card-bg hr {
-  opacity: 0.2;
-}
-.card-bg .description h4 {
-  font-weight: bolder;
-}
-.card-bg .description p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: lighter;
-}
-
-@media only screen and (max-width: 768px) {
-  .horizontal {
-    width: 100%;
-  }
-  .vertical {
-    width: 100%;
-    display: grid;
-  }
-  .card-bg {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .glass {
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-  }
-  .body {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.social-links {
+  font-size: 30px;
 }
 </style>

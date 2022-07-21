@@ -14,12 +14,15 @@
   <div id="earth"></div>
 
   <router-view />
+  <Footer />
 </template>
 <script>
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     Navbar,
+    Footer,
   },
 };
 </script>
@@ -66,10 +69,16 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 } */
+#stars,
+#stars2,
+#stars3 {
+  position: absolute;
+}
 #stars {
   width: 1px;
   height: 1px;
   background: transparent;
+
   box-shadow: 471px 1146px #fff, 237px 1441px #fff, 1163px 1144px #fff,
     1010px 384px #fff, 555px 880px #fff, 1960px 1643px #fff, 1575px 1137px #fff,
     963px 907px #fff, 1811px 1256px #fff, 1810px 662px #fff, 1358px 1340px #fff,
