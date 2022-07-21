@@ -38,8 +38,7 @@ export default {
 #Resume {
   height: 100vh;
   background-color: transparent;
-  background-color: black;
-  /* background-image: url(https://i.ibb.co/S0jtV2C/red.jpg); */
+
   color: white;
   display: flex;
   justify-content: center;

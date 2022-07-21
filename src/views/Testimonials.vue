@@ -78,8 +78,6 @@ export default {
   bottom: 50px;
 }
 #Testimonials {
-  background-color: #000;
-  /* background-image: url(https://i.ibb.co/S0jtV2C/red.jpg); */
   background-position: center;
   background-size: cover;
   height: 100vh;

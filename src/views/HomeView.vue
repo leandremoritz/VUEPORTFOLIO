@@ -3,6 +3,12 @@
     <!-- <div class="LM">
       <h1 id="logo1">Le-Andre Moritz</h1>
     </div> -->
+    <div id="title">Le-Andre Moritz</div>
+    <div id="subtitle">
+      <span> Aspiring </span>
+      <span> Web</span>
+      <span> Developer </span>
+    </div>
     <div class="world">
       <!-- <img src="" alt="" /> -->
 
@@ -35,6 +41,107 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#title {
+  position: absolute;
+  font-weight: 250;
+  top: 36%;
+  left: 0;
+  right: 0;
+  margin-top: -80px;
+  font-size: 100px;
+  text-align: center;
+
+  padding-left: 20px;
+
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: animGravity;
+  background: -webkit-linear-gradient(#fff, #9f9d9d, #fff, #9f9d9d, #fff);
+  /* background-image: linear-gradient(45deg, #000, #fff, #000, #fff, #000); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+#subtitle {
+  position: absolute;
+  font-weight: 300;
+  top: 70%;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 6px;
+}
+#subtitle span {
+  color: #d8d8d8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+#subtitle span:nth-child(1) {
+  animation-name: animDont;
+}
+#subtitle span:nth-child(2) {
+  animation-name: animLet;
+}
+#subtitle span:nth-child(3) {
+  animation-name: animGo;
+}
+@keyframes animDont {
+  0%,
+  15% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  35%,
+  80% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  92%,
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
+}
+@keyframes animLet {
+  0%,
+  25% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  45%,
+  80% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  92%,
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
+}
+@keyframes animGo {
+  0%,
+  35% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  55%,
+  80% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  92%,
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
 }
 /* .glass {
   width: 930px;

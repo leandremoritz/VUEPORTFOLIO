@@ -12,12 +12,7 @@
     <div class="glow"></div>
   </div>
   <div id="earth"></div>
-  <div id="title">Le-Andre Moritz</div>
-  <div id="subtitle">
-    <span> Aspiring </span>
-    <span> Web</span>
-    <span> Developer </span>
-  </div>
+
   <router-view />
 </template>
 <script>
@@ -684,6 +679,15 @@ html {
   left: 50%;
   bottom: -50%;
   margin-left: -100%;
+  animation-name: earth;
+}
+@keyframes earth {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(2.5);
+  }
 }
 
 #title {
@@ -712,32 +716,6 @@ html {
   text-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
 
-#subtitle {
-  position: absolute;
-  font-weight: 300;
-  top: 70%;
-  left: 0;
-  right: 0;
-  font-size: 25px;
-  text-align: center;
-  letter-spacing: 6px;
-}
-#subtitle span {
-  color: #d8d8d8;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
-#subtitle span:nth-child(1) {
-  animation-name: animDont;
-}
-#subtitle span:nth-child(2) {
-  animation-name: animLet;
-}
-#subtitle span:nth-child(3) {
-  animation-name: animGo;
-}
-
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -761,57 +739,6 @@ html {
   100% {
     letter-spacing: 25px;
     padding-left: 35px;
-    transform: translateY(-4px);
-    opacity: 0;
-  }
-}
-@keyframes animDont {
-  0%,
-  15% {
-    transform: translateY(-26px);
-    opacity: 0;
-  }
-  35%,
-  80% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  92%,
-  100% {
-    transform: translateY(-4px);
-    opacity: 0;
-  }
-}
-@keyframes animLet {
-  0%,
-  25% {
-    transform: translateY(-26px);
-    opacity: 0;
-  }
-  45%,
-  80% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  92%,
-  100% {
-    transform: translateY(-4px);
-    opacity: 0;
-  }
-}
-@keyframes animGo {
-  0%,
-  35% {
-    transform: translateY(-26px);
-    opacity: 0;
-  }
-  55%,
-  80% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  92%,
-  100% {
     transform: translateY(-4px);
     opacity: 0;
   }

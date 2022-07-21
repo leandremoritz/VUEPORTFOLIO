@@ -33,8 +33,6 @@ export default {};
 
 <style scoped>
 #Contacts {
-  background-color: black;
-  /* background-image: url(https://i.ibb.co/S0jtV2C/red.jpg); */
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -64,7 +62,7 @@ form textarea {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
   resize: none;
-  background-color: rgba(0, 0, 0, 0.909);
+  background-color: rgba(240, 229, 229, 0.909);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
@@ -79,7 +77,7 @@ form #input-submit {
   color: white;
 
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.909);
+  background-color: rgba(240, 229, 229, 0.909);
   backdrop-filter: blur(5px);
 }
 form #input-submit:hover {

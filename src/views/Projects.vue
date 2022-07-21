@@ -75,7 +75,6 @@ h2 {
   font-weight: bold;
 }
 body {
-  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
