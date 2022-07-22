@@ -74,7 +74,19 @@ form textarea:focus {
   box-shadow: 0 0px 2px rgb(240, 242, 239) !important;
 }
 form #input-submit {
-  color: white;
+  color: black;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* opacity: 0.6; */
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#fff, #9f9d9d, #fff, #9f9d9d, #fff);
+  /* background-image: linear-gradient(45deg, #000, #fff, #000, #fff, #000); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 
   cursor: pointer;
   background-color: white;
