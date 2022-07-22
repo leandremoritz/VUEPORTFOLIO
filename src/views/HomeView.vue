@@ -239,14 +239,6 @@ h2 {
   transform: scale(0.5);
 }
 
-@keyframes logofloat {
-  0% {
-    font-size: 100px;
-  }
-  50% {
-    font-size: 130px;
-  }
-}
 .world {
   height: 50vh;
 }
@@ -254,6 +246,14 @@ h2 {
   #title {
     font-size: 60px;
     animation-iteration-count: initial;
+  }
+  @keyframes logofloat {
+    0% {
+      font-size: 100px;
+    }
+    50% {
+      font-size: 130px;
+    }
   }
 }
 </style>
