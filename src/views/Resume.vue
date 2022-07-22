@@ -121,6 +121,9 @@ h1 {
   clear: both;
   animation: time 4s infinite;
 }
+.timeline__item :hover {
+  background-color: #01142499;
+}
 .timeline__item:after,
 .timeline__item:before {
   content: "";
