@@ -102,6 +102,14 @@ h1 {
     right: auto;
   }
 }
+@keyframes time {
+  0% {
+    transform: translateZ(100px);
+  }
+  50% {
+    transform: translateZ(40px);
+  }
+}
 
 .timeline__item {
   padding: 1rem;
@@ -111,6 +119,7 @@ h1 {
   position: relative;
   margin: 1rem 3rem 1rem 1rem;
   clear: both;
+  animation: time 4s infinite;
 }
 .timeline__item:after,
 .timeline__item:before {

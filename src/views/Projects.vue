@@ -71,6 +71,19 @@ export default {
           github: "https://github.com/Carlaamylawrence/Company_portfolio",
           netlify: "https://sweetheavenconfectionery.netlify.app",
         },
+        {
+          image:
+            "https://i.ibb.co/WDprLRV/jakub-sisulak-L1-AEdl-i-LL4-unsplash.jpg",
+          title: "LJMA GAMES",
+          github: "https://github.com/JesseSpence/ljmaUpdated",
+          netlify: "https://ljma-games-online-store.netlify.app/",
+        },
+        {
+          image: "https://i.ibb.co/z2khVTf/BMI.jpg",
+          title: "BMI Calculator",
+          github: "https://github.com/leandremoritz/Bmi_Calculator",
+          netlify: "https://celadon-praline-4eec9f.netlify.app/",
+        },
       ],
     };
   },
