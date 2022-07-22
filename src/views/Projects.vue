@@ -7,7 +7,7 @@
         :key="project"
       >
         <div class="container">
-          <div class="view view-tenth">
+          <div class="hello">
             <img
               data-bs-toggle="modal"
               data-bs-target="#PROJECTS1"
@@ -19,52 +19,22 @@
               <ul class="social-links">
                 <li>
                   <a
-                    href="https://github.com/Carlaamylawrence/Company_portfolio"
+                    :href="project.github"
                     class="fa-brands text-none fa-github"
-                    style="color: black"
+                    target="_blank"
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://sweetheavenconfectionery.netlify.app"
+                    :href="project.netlify"
                     class="fa-solid text-none fa-globe"
-                    style="color: black"
+                    target="_blank"
                   ></a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-        <!-- <article>
-          <div class="description">
-            <img :src="project.image" alt="" />
-
-            <h2>{{ project.title }}</h2>
-          </div>
-          <hr /> -->
-
-        <!-- <section class="actions">
-            <div class="circle">
-              <li>
-                <a
-                  href="https://github.com/leandremoritz/calculator"
-                  class="fa-brands text-none fa-github"
-                  style="color: black"
-                ></a>
-              </li>
-            </div>
-            <div class="circle">
-              <li>
-                <a
-                  href="https://sunny-pony-3cd535.netlify.app"
-                  class="fa-solid text-none fa-globe"
-                  style="color: black"
-                ></a>
-              </li>
-            </div>
-          </section> -->
-        <!-- </article> -->
       </section>
     </div>
   </div>
@@ -78,20 +48,28 @@ export default {
         {
           image: "https://i.ibb.co/pQXK2RW/amol-tyagi-UZFCQPNc4bs-unsplash.jpg",
           title: "Calculator",
+          github: "https://github.com/leandremoritz/calculator",
+          netlify: "https://sunny-pony-3cd535.netlify.app",
         },
         {
           image:
             "https://i.ibb.co/yWnrzQb/mike-swigunski-ue-Bmz9-K8z-Tg-unsplash.jpg",
           title: "Holiday Destination",
+          github: "https://github.com/leandremoritz/branchestask",
+          netlify: "https://sensational-semifreddo-4c9548.netlify.app",
         },
         {
           image:
             "https://i.ibb.co/XCScJw7/jason-leung-po-I7-Del-Fi-VA-unsplash.jpg",
           title: "Restuarant",
+          github: "https://github.com/leandremoritz/Delicious",
+          netlify: "https://deft-flan-4645a3.netlify.app",
         },
         {
           image: "https://i.ibb.co/5sKybWn/andy-li-Rnd-RFJ1v1kk-unsplash.jpg",
           title: "Bakery",
+          github: "https://github.com/Carlaamylawrence/Company_portfolio",
+          netlify: "https://sweetheavenconfectionery.netlify.app",
         },
       ],
     };
@@ -101,13 +79,70 @@ export default {
 
 <style scoped>
 /* project */
+
 img {
   width: 250px;
   height: 250px;
+  animation: hello 2s infinite;
+  box-shadow: 2px 2px 12px rgb(200, 191, 191) !important;
+}
+
+@keyframes hello {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.glass {
+  height: fit-content;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 60px;
+  padding-top: 60px;
+  margin-left: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .glass {
+    padding-left: 0;
+    width: fit-content;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .body {
+    display: flex;
+    justify-content: center;
+  }
+}
+ul {
+  list-style: none;
 }
 .body {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   color: white;
+}
+
+.fa-solid {
+  color: white;
+}
+.fa-brands {
+  color: white;
+}
+.fa-globe :hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 12px rgb(200, 191, 191);
+}
+.fa-brands:hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 12px rgb(200, 191, 191);
 }
 #Projects img {
   width: 150px;
@@ -239,5 +274,22 @@ img {
 }
 .social-links {
   font-size: 30px;
+}
+h2 {
+  color: #fff;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* opacity: 0.6; */
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#9f9d9d, #fff, #9f9d9d, #fff, #9f9d9d);
+  /* background-image: linear-gradient(45deg, #000, #fff, #000, #fff, #000); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  padding-top: 1%;
 }
 </style>
