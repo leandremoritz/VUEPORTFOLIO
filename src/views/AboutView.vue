@@ -25,33 +25,33 @@
 
           <ul>
             <li>
-              <b>Name</b>
+              <b class="info">Name</b>
               <br />
               <span>Le-Andre Moritz </span>
             </li>
             <li>
-              <b>Email</b>
+              <b class="info">Email</b>
               <br />
               <span>leandremoritz19@gmail.com </span>
             </li>
             <li>
-              <b>Address</b> <br />
+              <b class="info">Address</b> <br />
               <span> Bellville South </span>
             </li>
             <li>
-              <b>Phone</b> <br />
+              <b class="info">Phone</b> <br />
               <span>063 504 9120 </span>
             </li>
             <li>
-              <b>Date Of Birth</b><br />
+              <b class="info">Date Of Birth</b><br />
               <span> 15 November 2003 </span>
             </li>
             <li>
-              <b>Nationality</b> <br />
+              <b class="info">Nationality</b> <br />
               <span> South African </span>
             </li>
             <li>
-              <b>Languages</b> <br />
+              <b class="info">Languages</b> <br />
               <span> Afrikaans , English </span>
             </li>
           </ul>
@@ -74,7 +74,23 @@ export default {};
 h3 {
   /* margin-top: -350px; */
   font-weight: bold;
-  color: black !important;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* opacity: 0.6; */
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#fff, #9f9d9d, #fff, #9f9d9d, #fff);
+  /* background-image: linear-gradient(45deg, #000, #fff, #000, #fff, #000); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 3px 5px black;
+}
+.info {
+  font-size: 18px;
+  text-shadow: 2px 0px 2px black;
 }
 ul {
   list-style-type: none;
@@ -166,8 +182,8 @@ b {
   position: absolute;
   width: 85%;
   height: 85%;
-  background: white;
-  color: black;
+  background-color: #011424;
+  color: white;
   z-index: 5;
   bottom: 0;
   right: 0;
@@ -176,6 +192,7 @@ b {
   box-shadow: 0 0 8px rgba(255, 255, 255, 1);
   transform: translate(100%);
   transition: transform 0.4s;
+  font-weight: bolder;
 }
 .card input[type="checkbox"]:checked ~ .side {
   transform: translate(0%);
