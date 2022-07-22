@@ -2,7 +2,7 @@
   <section id="about">
     <div class="glass">
       <div class="card">
-        <input type="checkbox" name="" id="" />
+        <input type="checkbox" name="1" id="" value="i" />
         <div id="aboutMe">
           <img
             src="@/assets/Leandre.png"
