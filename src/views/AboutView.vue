@@ -115,6 +115,7 @@ b {
 .lee {
   background-color: inherit;
   margin-top: -250px;
+  filter: drop-shadow(10px 9px 5px black) !important;
 }
 .card .lee {
   margin-top: 1%;
