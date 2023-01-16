@@ -22,11 +22,11 @@ export default {
         {
           year: "2017-2021",
           title:
-            " Graduated High School at  Kasselvlei Comprehensive High School.",
+            " Graduated High School at Kasselvlei Comprehensive High School.",
         },
         {
-          year: "2022 (Present)",
-          title: "Studying Full Stack Development at Life Choice Academy.",
+          year: "2022",
+          title: "I attended Life Choices Coding Academy, where I completed a 6-month coding boot camp to become a web developer. I also completed 3 month SEO course",
         },
       ],
     };

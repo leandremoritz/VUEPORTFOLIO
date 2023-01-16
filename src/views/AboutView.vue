@@ -2,7 +2,16 @@
   <section id="about">
     <div class="glass">
       <div class="card">
-        <input type="checkbox" name="1" id="" value="i" />
+         <input type="checkbox" name="1" id="" value="i" />
+        
+         
+        <i class="fa fa-info icon" style="color: white;
+    width: 60px;
+    bottom: 22px;
+    position: absolute;
+    right: 0;">
+        </i>
+         
         <div id="aboutMe">
           <img
             src="@/assets/Leandre.png"
@@ -13,10 +22,8 @@
           <p class="text">
             I'm a well thought out person who enjoys solving problems. I love
             sightseeing, and travelling and will gladly welcome any adventure
-            that comes my way. My passion for technology recently started when I
-            started this course. Prior, I wanted to gain experience. However,
-            when I started, I found the course so interesting that it's now my
-            career choice.
+            that comes my way. I attended Life Choices Coding Academy, where I completed a 6-month coding boot camp to become a web developer. It was a full stack web development course focused on HTML, CSS, Bootstrap, JavaScript, Node.JS and MySQL.  
+            I also completed a 3 month SEO (Search Engine Optimization) course focused on Wordpress , Divi , Maintenance , SEO (basics , technique , GSC , link building , content & Ahrefs) , Core Web Vitals (Optimize a web page for speed , ensure few layout shifts by using the right CSS , create conversion-oriented designs so that the visitor does what we want on our web pages).
           </p>
         </div>
 
@@ -91,6 +98,7 @@ h3 {
 .info {
   font-size: 18px;
   text-shadow: 2px 0px 2px black;
+  border-color:;
 }
 ul {
   list-style-type: none;
@@ -225,5 +233,9 @@ b {
   .text {
     font-size: 13px;
   }
+}
+
+input::before{
+display: none
 }
 </style>

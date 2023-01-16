@@ -124,11 +124,13 @@ svg {
 }
 .navbar-toggler {
   color: white;
+    border-radius: 15.25rem !important;
 }
 
 #navbrand {
   margin-top: -30px;
 }
+
 
 #bar {
   width: 20rem;
@@ -136,4 +138,12 @@ svg {
 a {
   text-decoration: none;
 }
+#navbarScroll {
+background: #072238;
+    margin-top: 7px;
+}
+#navbarScroll > ul{
+--bs-scroll-height: 279px !important;
+}
+
 </style>
