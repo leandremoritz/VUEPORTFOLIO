@@ -4,7 +4,7 @@
       <div class="container">
         <!-- <h1 style="margin: 0 !important">Resume</h1> -->
         <div class="timeline">
-          <div class="timeline__item" v-for="job in resume" :key="job">
+          <div  class="timeline__item" v-for="job in resume" :key="job">
             <h2>{{ job.year }}</h2>
             <h3>{{ job.title }}</h3>
           </div>
@@ -199,4 +199,9 @@ h1 {
     height: fit-content;
   }
 }
+.glass {
+    background: #09213ebd !important;
+}
+
+
 </style>

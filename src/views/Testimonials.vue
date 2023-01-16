@@ -69,7 +69,7 @@ export default {
 <style scoped>
 .glass {
   width: 90vw;
-  height: 520px;
+  height: 700px;
   box-shadow: 0 0 8px rgba(255, 255, 255, 1);
   backdrop-filter: blur(5px);
   background-position: center;
@@ -147,6 +147,7 @@ export default {
   font-size: 20px;
 }
 .dots {
+    margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,5 +306,21 @@ export default {
     padding-left: 2%;
     padding-right: 2%;
   }
+}
+.glass {
+    background: #09213ebd !important;
+}
+.dots label[data-v-dd473224] {
+    display: block;
+    height: 5px;
+    width: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #413b52;
+    margin: 22px;
+    transition: transform 0.2s, color 0.2s;
+}
+label.item {
+    height: 350px;
 }
 </style>

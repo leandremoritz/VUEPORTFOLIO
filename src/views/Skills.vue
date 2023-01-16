@@ -311,4 +311,8 @@ p[data-value]:after {
     width: 40vh;
   }
 }
+.glass {
+    background: #09213ebd !important;
+}
+
 </style>

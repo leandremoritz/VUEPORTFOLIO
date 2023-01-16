@@ -139,4 +139,7 @@ form textarea {
     height: fit-content;
   }
 }
+.glass {
+    background: #09213ebd !important;
+}
 </style>

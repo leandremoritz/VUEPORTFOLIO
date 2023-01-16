@@ -305,4 +305,7 @@ h2 {
   font-size: 30px;
   padding-top: 1%;
 }
+.glass {
+    background: #09213ebd !important;
+}
 </style>

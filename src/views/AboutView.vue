@@ -238,4 +238,15 @@ b {
 input::before{
 display: none
 }
+img.lee {
+    background: #09213ebd !important
+    ;
+}
+.card .lee{
+    margin-top: -4.5% !important;
+   
+}
+.card {
+    background: #09213ebd !important;
+}
 </style>

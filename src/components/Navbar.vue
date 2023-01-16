@@ -145,5 +145,8 @@ background: #072238;
 #navbarScroll > ul{
 --bs-scroll-height: 279px !important;
 }
+.container-fluid {
+    background: #072238;
+}
 
 </style>
