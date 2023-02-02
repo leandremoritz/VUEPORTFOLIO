@@ -216,18 +216,9 @@ b {
 }
 .glass {
   width: 90vw;
+  
   height: 520px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 1);
-
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  bottom: 50px;
-
-  background: inherit;
-}
-@media screen and (max-width: 500px) {
-  #aboutMe {
+{
     flex-direction: column;
   }
   .text {
