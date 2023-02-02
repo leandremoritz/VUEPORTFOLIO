@@ -49,7 +49,7 @@ export default {
           name: "Jason Wandrag",
         },
         {
-          img: "https://i.ibb.co/R7xX1WQ/ash.png",
+          img: "https://i.postimg.cc/Sx9d9VQX/ash2.png",
           quote:
             "Le-Andre is a very talented and intelligent individual, who is willing to go the extra mile and loves to add her own persontouch to things. She isn't afraid to ask questions and likes learning new things, she has great potential.",
           name: "Ashton Abrahams",
