@@ -60,7 +60,7 @@ export default {
         // },
         {
           image:
-            "https://i.ibb.co/XCScJw7/jason-leung-po-I7-Del-Fi-VA-unsplash.jpg",
+            "https://i.postimg.cc/ydbDCvL1/Screenshot-20230202-114151.png",
           title: "Restuarant",
           github: "https://github.com/leandremoritz/Delicious",
           netlify: "https://deft-flan-4645a3.netlify.app",
