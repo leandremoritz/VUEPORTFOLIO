@@ -46,18 +46,18 @@ export default {
     return {
       projects: [
         {
-          image: "https://i.ibb.co/pQXK2RW/amol-tyagi-UZFCQPNc4bs-unsplash.jpg",
+          image: "https://i.postimg.cc/FzmBB3YF/amol-tyagi-UZFCQPNc4bs-unsplash.jpg",
           title: "Calculator",
           github: "https://github.com/leandremoritz/calculator",
           netlify: "https://sunny-pony-3cd535.netlify.app",
         },
-        {
-          image:
-            "https://i.ibb.co/yWnrzQb/mike-swigunski-ue-Bmz9-K8z-Tg-unsplash.jpg",
-          title: "Holiday Destination",
-          github: "https://github.com/leandremoritz/branchestask",
-          netlify: "https://sensational-semifreddo-4c9548.netlify.app",
-        },
+        // {
+        //   image:
+        //     "https://i.ibb.co/yWnrzQb/mike-swigunski-ue-Bmz9-K8z-Tg-unsplash.jpg",
+        //   title: "Holiday Destination",
+        //   github: "https://github.com/leandremoritz/branchestask",
+        //   netlify: "https://sensational-semifreddo-4c9548.netlify.app",
+        // },
         {
           image:
             "https://i.ibb.co/XCScJw7/jason-leung-po-I7-Del-Fi-VA-unsplash.jpg",
@@ -66,20 +66,20 @@ export default {
           netlify: "https://deft-flan-4645a3.netlify.app",
         },
         {
-          image: "https://i.ibb.co/5sKybWn/andy-li-Rnd-RFJ1v1kk-unsplash.jpg",
+          image: "https://i.postimg.cc/MH0KCCzk/Screenshot-20230202-102807.png",
           title: "Bakery",
           github: "https://github.com/Carlaamylawrence/Company_portfolio",
           netlify: "https://sweetheavenconfectionery.netlify.app",
         },
         {
           image:
-            "https://i.ibb.co/WDprLRV/jakub-sisulak-L1-AEdl-i-LL4-unsplash.jpg",
+            "https://i.postimg.cc/MGnNM1MX/Screenshot-20230202-102459.png",
           title: "LJMA GAMES",
           github: "https://github.com/JesseSpence/ljmaUpdated",
           netlify: "https://ljma-games-online-store.netlify.app/",
         },
         {
-          image: "https://i.ibb.co/z2khVTf/BMI.jpg",
+          image: "https://i.postimg.cc/mkPtKXtB/Screenshot-20230202-102614.png",
           title: "BMI Calculator",
           github: "https://github.com/leandremoritz/Bmi_Calculator",
           netlify: "https://celadon-praline-4eec9f.netlify.app/",

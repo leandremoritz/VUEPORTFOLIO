@@ -2,28 +2,28 @@
   <section id="about">
     <div class="glass">
       <div class="card">
-         <input type="checkbox" name="1" id="" value="i" />
-        
-         
+        <input type="checkbox" name="1" id="" value="i" />
+
+
         <i class="fa fa-info icon" style="color: white;
     width: 60px;
     bottom: 22px;
     position: absolute;
     right: 0;">
         </i>
-         
+
         <div id="aboutMe">
-          <img
-            src="@/assets/Leandre.png"
-            alt="In-Shot-20220719-105140013-removebg-preview"
-            border="0"
-            class="lee"
-          />
+          <img src="@/assets/Leandre.png" alt="In-Shot-20220719-105140013-removebg-preview" border="0" class="lee" />
           <p class="text">
             I'm a well thought out person who enjoys solving problems. I love
             sightseeing, and travelling and will gladly welcome any adventure
-            that comes my way. I attended Life Choices Coding Academy, where I completed a 6-month coding boot camp to become a web developer. It was a full stack web development course focused on HTML, CSS, Bootstrap, JavaScript, Node.JS and MySQL.  
-            I also completed a 3 month SEO (Search Engine Optimization) course focused on Wordpress , Divi , Maintenance , SEO (basics , technique , GSC , link building , content & Ahrefs) , Core Web Vitals (Optimize a web page for speed , ensure few layout shifts by using the right CSS , create conversion-oriented designs so that the visitor does what we want on our web pages).
+            that comes my way. I attended Life Choices Coding Academy, where I completed a 6-month coding boot camp to
+            become a web developer. It was a full stack web development course focused on HTML, CSS, Bootstrap,
+            JavaScript, Node.JS and MySQL.
+            I also completed a 3 month SEO (Search Engine Optimization) course focused on Wordpress , Divi , Maintenance
+            , SEO (basics , technique , GSC , link building , content & Ahrefs) , Core Web Vitals (Optimize a web page
+            for speed , ensure few layout shifts by using the right CSS , create conversion-oriented designs so that the
+            visitor does what we want on our web pages).
           </p>
         </div>
 
@@ -78,6 +78,7 @@ export default {};
   font-weight: bolder;
   color: white;
 }
+
 h3 {
   /* margin-top: -350px; */
   font-weight: bold;
@@ -95,17 +96,21 @@ h3 {
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 3px 5px black;
 }
+
 .info {
   font-size: 18px;
   text-shadow: 2px 0px 2px black;
-  border-color:;
+  /* border-color:  */
 }
+
 ul {
   list-style-type: none;
 }
+
 b {
   font-size: 15px;
 }
+
 #about {
   background-position: center;
   background-size: cover;
@@ -115,6 +120,7 @@ b {
   justify-content: center;
   backdrop-filter: blur(3px);
 }
+
 #aboutMe {
   margin-top: 8vh;
   display: flex;
@@ -122,6 +128,7 @@ b {
 
   align-items: center;
 }
+
 /* card */
 .card {
   width: 90vw;
@@ -136,11 +143,13 @@ b {
   align-items: center;
   /* border-radius: 15px; */
 }
+
 .lee {
   background-color: inherit;
   margin-top: -250px;
   filter: drop-shadow(10px 9px 5px black) !important;
 }
+
 .card .lee {
   margin-top: 1%;
 
@@ -149,6 +158,7 @@ b {
 
   transition: transform 0.5s, filter 0.4s;
 }
+
 .card input[type="checkbox"] {
   position: absolute;
   width: 40px;
@@ -168,9 +178,11 @@ b {
   transition: transform 0.4s;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.238);
 }
+
 .card input[type="checkbox"]:checked {
   transform: translate(-450%);
 }
+
 .card input[type="checkbox"]::before {
   content: "\f129";
   position: absolute;
@@ -179,13 +191,16 @@ b {
   font-weight: 700;
   font-size: 1em;
 }
-.card input[type="checkbox"]:checked ~ .lee {
+
+.card input[type="checkbox"]:checked~.lee {
   transform: scale(1.2) rotate(-20deg);
   filter: blur(10px);
 }
+
 .card input[type="checkbox"]:checked::before {
   content: "\f061";
 }
+
 .side {
   position: absolute;
   width: 85%;
@@ -202,42 +217,48 @@ b {
   transition: transform 0.4s;
   font-weight: bolder;
 }
-.card input[type="checkbox"]:checked ~ .side {
+
+.card input[type="checkbox"]:checked~.side {
   transform: translate(0%);
 }
+
 .side h3 {
   color: black;
   margin: 25px 0 10px 15px;
 }
+
 .side p {
   color: black;
   margin-left: 15px;
   font-size: 0.8em;
 }
+
 .glass {
   width: 90vw;
-  
+
   height: 520px;
-{
-    flex-direction: column;
-  }
-  .text {
-    font-size: 13px;
-  }
+  flex-direction: column;
 }
 
-input::before{
-display: none
+.text {
+  font-size: 13px;
 }
+
+
+input::before {
+  display: none
+}
+
 img.lee {
-    background: #09213ebd !important
-    ;
+  background: #09213ebd !important;
 }
-.card .lee{
-    margin-top: -4.5% !important;
-   
+
+.card .lee {
+  margin-top: -4.5% !important;
+
 }
+
 .card {
-    background: #09213ebd !important;
+  background: #09213ebd !important;
 }
 </style>
