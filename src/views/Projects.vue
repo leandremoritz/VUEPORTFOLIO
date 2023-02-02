@@ -109,7 +109,7 @@ img {
   }
 }
 .glass {
-  height: fit-content;
+  height: 80vh;
 
   display: flex;
   flex-wrap: wrap;

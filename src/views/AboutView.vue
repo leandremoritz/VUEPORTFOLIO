@@ -236,7 +236,7 @@ b {
 .glass {
   width: 90vw;
 
-  height: 520px;
+  height:78vh;
   flex-direction: column;
 }
 

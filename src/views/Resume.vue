@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .glass {
-  height: fit-content;
+  height: 80vh;
 }
 #Resume {
   height: 100vh;

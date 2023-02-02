@@ -79,7 +79,7 @@ ul {
 .glass {
   margin-top: 20vh;
   margin-left: 4vw;
-  height: fit-content;
+  height: 78vh;
 }
 
 body {
